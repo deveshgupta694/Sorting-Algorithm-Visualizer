@@ -163,7 +163,7 @@ int main()
 	unsigned seed = chrono::system_clock::now().time_since_epoch().count(); 
 	shuffle(arr.begin(), arr.end(), default_random_engine(seed)); 
 	
-	cout<<"arr before sort\n";
+	cout<<"Array before sort\n";
 	for (int i = 0; i < n; i++) cout << arr[i] << " "; 
 
 	delay(5); 
@@ -186,7 +186,8 @@ int main()
 	// quick_sort(0 , n-1);
 
 	getch();
-	closegraph(); 
-
+	cout<<"\nArray after sort\n";
+	for (int i = 0; i < n; i++) cout << arr[i] << " ";
 	return 0; 
 } 
+
